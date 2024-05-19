@@ -1,0 +1,63 @@
+/*
+ * package OOP_Basic;
+
+public class Test {
+String name;
+int id;
+public Test() {
+	
+}
+public Test(String name) {
+	this.name= name;
+}
+public Test(String name, int id) {
+	this.name= name;
+	this.id= id;
+}
+}
+*/
+package OOP_Basic;
+
+public class Test {
+    private String name;
+    private int id;
+
+    // Default constructor
+    public Test() {
+        // Initialize instance variables if needed
+        this.name = "";
+        this.id = 0;
+    }
+
+    // Constructor with only 'name'
+    public Test(String name) {
+        this.name = name;
+        this.id = 0; // Set a default value for 'id'
+    }
+
+    // Constructor with both 'name' and 'id'
+    public Test(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    // Getter for 'name'
+    public String getName() {
+        return name;
+    }
+
+    // Setter for 'name'
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter for 'id'
+    public int getId() {
+        return id;
+    }
+
+    // Setter for 'id'
+    public void setId(int id) {
+        this.id = id;
+    }
+}
